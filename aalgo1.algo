@@ -1,0 +1,17 @@
+ALGORITHM BARAA
+VAR
+ch:CHAR
+nb-character , nb-vowels:=0:INTEGER
+nb-words:=1:INTEGER
+BEGIN
+   write  ("this sentence must end with point")
+     WHILE (ch<>".") DO
+           nb-character:=nb-character+1
+           IF (ch=" ") THEN
+                 nb-words=nb-words+1
+           END_IF
+           IF (ch="a"or ch="o"or ch="u"or ch="i"or ch="e"or ch="y"or ch="A"or ch="O"or ch="U"or ch="I"or ch="E"or ch="Y") THEN
+                 nb-vowels+1
+           END_IF
+     END_WHILE
+END BEGIN
